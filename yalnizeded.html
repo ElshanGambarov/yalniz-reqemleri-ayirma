@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yalniz ededleri ayir</title>
+  <script>
+    function removeNonNumeric(str) {
+      return str.replace(/[^0-9]/g, '');
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="myInput" />
+  <button onclick="cleanInput()">sil</button>
+  
+  <script>
+    function cleanInput() {
+      var inputStr = document.getElementById("myInput").value;
+      var outputStr = removeNonNumeric(inputStr);
+      document.getElementById("myInput").value = outputStr;
+    }
+  </script>
+</body>
+</html>
